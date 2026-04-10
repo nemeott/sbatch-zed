@@ -1,0 +1,5 @@
+name = "SBATCH"
+grammar = "sbatch"
+path_suffixes = ["sb", "sbatch"]
+first_line_pattern = "^#SBATCH"
+line_comments = ["# "]
