@@ -14,3 +14,14 @@ Lightweight Zed grammar extension that provides syntax highlighting for SLURM `s
 
 ## Install
 - Clone the repo and install as a dev extension in Zed.
+
+## Development
+
+Update the grammar in `tree-sitter-sbatch` and then run the following commands in the `tree-sitter-sbatch` directory:
+
+```bash
+tree-sitter generate
+tree-sitter build --wasm
+```
+
+Then copy the `.wasm` file to `sbatch-zed/grammars/sbatch.wasm` and remove the left over `sbatch/` folder from last time.
